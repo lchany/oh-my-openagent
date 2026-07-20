@@ -21,6 +21,7 @@ type ResolveSkillContentOptions = {
   browserProvider?: BrowserAutomationProvider
   disabledSkills?: Set<string>
   teamModeEnabled?: boolean
+  includeClaudeCodePaths?: boolean
   directory?: string
   targetAgent?: string
   nativeSkills?: DelegateTaskToolOptions["nativeSkills"]
@@ -94,7 +95,7 @@ export async function resolveSkillContent(
   const getUnfilteredDiscoveredSkills = async (): Promise<LoadedSkill[]> => {
     if (unfilteredDiscoveredSkills) return unfilteredDiscoveredSkills
     unfilteredDiscoveredSkills = await discoverSkills({
-      includeClaudeCodePaths: true,
+      includeClaudeCodePaths: options.includeClaudeCodePaths ?? false,
       directory: options.directory,
     })
     return unfilteredDiscoveredSkills
@@ -138,7 +139,7 @@ export async function resolveSkillContent(
     let available = baseSkills.map((s) => s.name).join(", ")
     if (!available) {
       const fallback = await discoverSkills({
-        includeClaudeCodePaths: true,
+        includeClaudeCodePaths: options.includeClaudeCodePaths ?? false,
         directory: options.directory,
       })
       available = fallback.map((s) => s.name).join(", ")

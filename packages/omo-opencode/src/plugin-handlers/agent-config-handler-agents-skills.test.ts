@@ -1,3 +1,5 @@
+/// <reference types="bun-types" />
+
 import type { AgentConfig } from "@opencode-ai/sdk"
 import { afterEach, beforeEach, describe, expect, spyOn, test } from "bun:test"
 import * as agents from "../agents"
@@ -20,11 +22,19 @@ function createPluginComponents(): PluginComponents {
   }
 }
 
-function createPluginConfig(): OhMyOpenCodeConfig {
+function createPluginConfig(
+  overrides: Omit<Partial<OhMyOpenCodeConfig>, "git_master"> = {},
+): OhMyOpenCodeConfig {
   return {
+    git_master: {
+      commit_footer: true,
+      include_co_authored_by: true,
+      git_env_prefix: "GIT_MASTER=1",
+    },
     sisyphus_agent: {
       planner_enabled: false,
     },
+    ...overrides,
   }
 }
 
@@ -75,7 +85,7 @@ describe("applyAgentConfig .agents skills", () => {
     logSpy.mockRestore()
   })
 
-  test("calls .agents skill discovery during agent configuration", async () => {
+  test("does not call legacy skill discovery by default during agent configuration", async () => {
     // given
     const directory = "/tmp/project"
 
@@ -88,11 +98,30 @@ describe("applyAgentConfig .agents skills", () => {
     })
 
     // then
+    expect(discoverUserClaudeSkillsSpy).not.toHaveBeenCalled()
+    expect(discoverProjectClaudeSkillsSpy).not.toHaveBeenCalled()
+    expect(discoverProjectAgentsSkillsSpy).not.toHaveBeenCalled()
+    expect(discoverGlobalAgentsSkillsSpy).not.toHaveBeenCalled()
+  })
+
+  test("calls legacy .agents skill discovery when Claude Code skills are explicitly enabled", async () => {
+    // given
+    const directory = "/tmp/project"
+
+    // when
+    await applyAgentConfig({
+      config: { model: "anthropic/claude-opus-4-7", agent: {} },
+      pluginConfig: createPluginConfig({ claude_code: { skills: true } }),
+      ctx: { directory },
+      pluginComponents: createPluginComponents(),
+    })
+
+    // then
     expect(discoverProjectAgentsSkillsSpy).toHaveBeenCalledWith(directory)
     expect(discoverGlobalAgentsSkillsSpy).toHaveBeenCalled()
   })
 
-  test("passes discovered .agents skills to builtin agent creation", async () => {
+  test("passes discovered .agents skills to builtin agent creation when legacy skills are enabled", async () => {
     // given
     discoverProjectAgentsSkillsSpy.mockResolvedValue([
       {
@@ -112,7 +141,7 @@ describe("applyAgentConfig .agents skills", () => {
     // when
     await applyAgentConfig({
       config: { model: "anthropic/claude-opus-4-7", agent: {} },
-      pluginConfig: createPluginConfig(),
+      pluginConfig: createPluginConfig({ claude_code: { skills: true } }),
       ctx: { directory: "/tmp/project" },
       pluginComponents: createPluginComponents(),
     })
@@ -191,7 +220,7 @@ describe("applyAgentConfig .agents skills", () => {
     // when
     await applyAgentConfig({
       config: { model: "anthropic/claude-opus-4-7", agent: {} },
-      pluginConfig: createPluginConfig(),
+      pluginConfig: createPluginConfig({ claude_code: { skills: true } }),
       ctx: { directory: "/tmp/project" },
       pluginComponents: createPluginComponents(),
     })

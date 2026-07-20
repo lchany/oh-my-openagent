@@ -15,7 +15,7 @@ import type { ApplyAgentConfigParams } from "./agent-config-types";
 export async function discoverAgentSkills(
   params: Pick<ApplyAgentConfigParams, "config" | "pluginConfig" | "ctx">,
 ): Promise<LoadedSkill[]> {
-  const includeClaudeSkillsForAwareness = params.pluginConfig.claude_code?.skills ?? true;
+  const includeClaudeSkillsForAwareness = params.pluginConfig.claude_code?.skills ?? false;
   const hostSkillConfig = adaptHostSkillConfig(params.config.skills);
   const [
     discoveredConfigSourceSkills,

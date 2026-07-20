@@ -39,6 +39,7 @@ export interface ExecutorOptions {
   skills?: LoadedSkill[]
   pluginsEnabled?: boolean
   enabledPluginsOverride?: Record<string, boolean>
+  includeClaudeCodePaths?: boolean
   agent?: string
   directory?: string
 }
@@ -50,7 +51,10 @@ async function discoverAllCommands(options?: ExecutorOptions): Promise<CommandIn
     enabledPluginsOverride: options?.enabledPluginsOverride,
   })
 
-  const skills = options?.skills ?? await discoverAllSkills()
+  const skills = options?.skills ?? await discoverAllSkills({
+    includeClaudeCodePaths: options?.includeClaudeCodePaths ?? false,
+    directory: options?.directory,
+  })
   const skillCommands = skills.map(skillToCommandInfo)
 
   const scopeOrder: DiscoveredCommandInfo["scope"][] = ["project", "user", "opencode-project", "opencode", "builtin", "plugin"]

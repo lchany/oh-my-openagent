@@ -95,6 +95,7 @@ export function createDelegateTask(options: DelegateTaskToolOptions): ToolDefini
         browserProvider: options.browserProvider,
         disabledSkills: options.disabledSkills,
         teamModeEnabled: options.teamModeEnabled,
+        includeClaudeCodePaths: options.includeClaudeCodePaths,
         directory: options.directory,
         targetAgent: delegateTaskArgs.subagent_type,
         nativeSkills: options.nativeSkills,

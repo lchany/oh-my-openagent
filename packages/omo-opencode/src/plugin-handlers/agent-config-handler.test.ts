@@ -41,6 +41,14 @@ function createBaseConfig(): Record<string, unknown> {
   }
 }
 
+function getAgentConfig(
+  agents: Record<string, unknown>,
+  name: string,
+): Record<string, unknown> | undefined {
+  const agent = agents[name]
+  return typeof agent === "object" && agent !== null && !Array.isArray(agent) ? agent : undefined
+}
+
 function createPluginConfig(): OhMyOpenCodeConfig {
   return {
     git_master: {
@@ -568,7 +576,7 @@ describe("applyAgentConfig builtin override protection", () => {
     expect(isAgentRegistered("sisyphus")).toBe(true)
   })
 
-  test("includes project and global .agents skills in builtin agent awareness", async () => {
+  test("includes project and global .agents skills in builtin agent awareness when legacy skills are enabled", async () => {
     // given
     const projectAgentsSkill = {
       name: "project-agent-skill",
@@ -592,9 +600,11 @@ describe("applyAgentConfig builtin override protection", () => {
     discoverGlobalAgentsSkillsSpy.mockResolvedValue([globalAgentsSkill])
 
     // when
+    const pluginConfig = createPluginConfig()
+    pluginConfig.claude_code = { skills: true }
     await applyAgentConfig({
       config: createBaseConfig(),
-      pluginConfig: createPluginConfig(),
+      pluginConfig,
       ctx: { directory: "/tmp" },
       pluginComponents: createPluginComponents(),
     })
@@ -642,6 +652,7 @@ describe("applyAgentConfig builtin override protection", () => {
     } satisfies LoadedSkill
     discoverProjectClaudeSkillsSpy.mockResolvedValue([projectSkill])
     const pluginConfig = createPluginConfig()
+    pluginConfig.claude_code = { skills: true }
     configure(pluginConfig)
 
     // when
@@ -686,7 +697,7 @@ describe("applyAgentConfig builtin override protection", () => {
 
       // then
       expect(result["my-custom-agent"]).toBeDefined()
-      expect(result["my-custom-agent"]?.prompt).toBe("test custom agent from agent_definitions")
+      expect(getAgentConfig(result, "my-custom-agent")?.prompt).toBe("test custom agent from agent_definitions")
     })
 
     test("opencode.json agents appear in output", async () => {
@@ -710,8 +721,8 @@ describe("applyAgentConfig builtin override protection", () => {
 
       // then
       expect(result["opencode-agent"]).toBeDefined()
-      expect(result["opencode-agent"]?.prompt).toBe("test opencode config agent")
-      expect(result["opencode-agent"]?.description).toBe("(opencode-config) OC")
+      expect(getAgentConfig(result, "opencode-agent")?.prompt).toBe("test opencode config agent")
+      expect(getAgentConfig(result, "opencode-agent")?.description).toBe("(opencode-config) OC")
     })
 
     test("agent_definitions agents subject to disabled_agents filtering", async () => {
@@ -761,7 +772,7 @@ describe("applyAgentConfig builtin override protection", () => {
 
       // then
       expect(result.oracle).toBeDefined()
-      expect(result.oracle?.prompt).not.toBe("evil override prompt")
+      expect(getAgentConfig(result, "oracle")?.prompt).not.toBe("evil override prompt")
     })
 
     test("precedence: configAgents override agent_definitions", async () => {
@@ -794,7 +805,7 @@ describe("applyAgentConfig builtin override protection", () => {
 
       // then
       expect(result["shared-name"]).toBeDefined()
-      expect(result["shared-name"]?.prompt).toBe("from-config")
+      expect(getAgentConfig(result, "shared-name")?.prompt).toBe("from-config")
     })
 
     test("precedence: custom agent sources resolve from lowest to highest priority", async () => {
@@ -869,7 +880,7 @@ describe("applyAgentConfig builtin override protection", () => {
       })
 
       // then
-      expect(result["shared-name"]?.prompt).toBe("from-config")
+      expect(getAgentConfig(result, "shared-name")?.prompt).toBe("from-config")
     })
 
     test("precedence: agent_definitions overrides project agents", async () => {
@@ -901,7 +912,7 @@ describe("applyAgentConfig builtin override protection", () => {
 
       // then
       expect(result["shared-name"]).toBeDefined()
-      expect(result["shared-name"]?.prompt).toBe("from-definitions")
+      expect(getAgentConfig(result, "shared-name")?.prompt).toBe("from-definitions")
     })
 
     test("both Sisyphus-enabled and disabled paths include new sources", async () => {
@@ -936,9 +947,9 @@ describe("applyAgentConfig builtin override protection", () => {
 
       // then
       expect(result["definitions-agent"]).toBeDefined()
-      expect(result["definitions-agent"]?.prompt).toBe("from agent_definitions")
+      expect(getAgentConfig(result, "definitions-agent")?.prompt).toBe("from agent_definitions")
       expect(result["opencode-agent"]).toBeDefined()
-      expect(result["opencode-agent"]?.prompt).toBe("from opencode.json")
+      expect(getAgentConfig(result, "opencode-agent")?.prompt).toBe("from opencode.json")
     })
   })
 })

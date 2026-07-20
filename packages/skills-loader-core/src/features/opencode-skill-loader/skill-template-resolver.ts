@@ -94,11 +94,15 @@ async function loadConfiguredGitMasterSkill(options?: SkillResolutionOptions): P
 	const rootGroups: Array<{ readonly roots: readonly string[]; readonly scope: SkillScope }> = [
 		{ roots: findProjectOpencodeSkillDirs(directory), scope: "opencode-project" },
 		{ roots: getOpenCodeSkillDirs({ binary: "opencode" }), scope: "opencode" },
-		{ roots: findProjectClaudeSkillDirs(directory), scope: "project" },
-		{ roots: findProjectAgentsSkillDirs(directory), scope: "project" },
-		{ roots: [join(getClaudeConfigDir(), "skills")], scope: "user" },
-		{ roots: [join(getHomeDirectory(), ".agents", "skills")], scope: "user" },
 	]
+	if (options?.includeClaudeCodePaths === true) {
+		rootGroups.push(
+			{ roots: findProjectClaudeSkillDirs(directory), scope: "project" },
+			{ roots: findProjectAgentsSkillDirs(directory), scope: "project" },
+			{ roots: [join(getClaudeConfigDir(), "skills")], scope: "user" },
+			{ roots: [join(getHomeDirectory(), ".agents", "skills")], scope: "user" },
+		)
+	}
 
 	for (const group of rootGroups) {
 		for (const root of group.roots) {

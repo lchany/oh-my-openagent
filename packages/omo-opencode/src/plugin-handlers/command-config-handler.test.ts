@@ -90,7 +90,7 @@ describe("applyCommandConfig", () => {
     loadGlobalAgentsSkillsSpy.mockRestore();
   });
 
-  test("includes .agents skills in command config", async () => {
+  test("includes .agents skills in command config when Claude-compatible skills are enabled", async () => {
     // given
     loadProjectAgentsSkillsSpy.mockResolvedValue({
       "agents-project-skill": {
@@ -109,7 +109,7 @@ describe("applyCommandConfig", () => {
     // when
     await applyCommandConfig({
       config,
-      pluginConfig: createPluginConfig(),
+      pluginConfig: createParsedPluginConfig({ claude_code: { skills: true } }),
       ctx: { directory: "/tmp" },
       pluginComponents: createPluginComponents(),
     });

@@ -41,8 +41,9 @@ export function clearSkillCache(): void {
 export async function getAllSkills(options?: SkillResolutionOptions): Promise<LoadedSkill[]> {
 	const browserProvider = options?.browserProvider ?? "playwright"
 	const teamModeEnabled = options?.teamModeEnabled ?? false
+	const includeClaudeCodePaths = options?.includeClaudeCodePaths ?? false
 	const directory = options?.directory ?? ""
-	const cacheKey = `${directory}:${browserProvider}:${teamModeEnabled ? "team-on" : "team-off"}`
+	const cacheKey = `${directory}:${browserProvider}:${teamModeEnabled ? "team-on" : "team-off"}:${includeClaudeCodePaths ? "claude-on" : "claude-off"}`
 	const hasDisabledSkills = options?.disabledSkills && options.disabledSkills.size > 0
 
 	// Skip cache if disabledSkills is provided (varies between calls)
@@ -52,7 +53,7 @@ export async function getAllSkills(options?: SkillResolutionOptions): Promise<Lo
 	}
 
 	const [discoveredSkills, builtinSkillDefinitions] = await Promise.all([
-		discoverSkills({ includeClaudeCodePaths: true, directory: options?.directory }),
+		discoverSkills({ includeClaudeCodePaths, directory: options?.directory }),
 		createBuiltinSkills({
 			browserProvider,
 			disabledSkills: options?.disabledSkills,

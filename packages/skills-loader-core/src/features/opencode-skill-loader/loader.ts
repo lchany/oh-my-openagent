@@ -84,17 +84,33 @@ export function createSharedCanonicalAliases(skills: LoadedSkill[]): LoadedSkill
   })
 }
 
-export async function discoverAllSkills(directory?: string): Promise<LoadedSkill[]> {
+export async function discoverAllSkills(options: DiscoverSkillsOptions | string = {}): Promise<LoadedSkill[]> {
+  const directory = typeof options === "string" ? options : options.directory
+  const includeClaudeCodePaths = typeof options === "string"
+    ? false
+    : options.includeClaudeCodePaths ?? false
+
+  const claudeSkillsPromise = includeClaudeCodePaths
+    ? Promise.all([
+        discoverProjectClaudeSkills(directory),
+        discoverUserClaudeSkills(),
+        discoverProjectAgentsSkills(directory),
+        discoverGlobalAgentsSkills(),
+      ])
+    : Promise.resolve<[LoadedSkill[], LoadedSkill[], LoadedSkill[], LoadedSkill[]]>([[], [], [], []])
+
   const [opencodeProjectSkills, opencodeGlobalSkills, sharedSkills, projectSkills, userSkills, agentsProjectSkills, agentsGlobalSkills] =
     await Promise.all([
       discoverOpencodeProjectSkills(directory),
       discoverOpencodeGlobalSkills(),
       discoverSharedSkills(),
-      discoverProjectClaudeSkills(directory),
-      discoverUserClaudeSkills(),
-      discoverProjectAgentsSkills(directory),
-      discoverGlobalAgentsSkills(),
-    ])
+      claudeSkillsPromise,
+    ]).then(([opencodeProjectSkills, opencodeGlobalSkills, sharedSkills, claudeSkills]) => [
+      opencodeProjectSkills,
+      opencodeGlobalSkills,
+      sharedSkills,
+      ...claudeSkills,
+    ] as const)
 
   return deduplicateSkillsByName([
     ...createSharedCanonicalAliases(sharedSkills),
@@ -109,7 +125,7 @@ export async function discoverAllSkills(directory?: string): Promise<LoadedSkill
 }
 
 export async function discoverSkills(options: DiscoverSkillsOptions = {}): Promise<LoadedSkill[]> {
-  const { includeClaudeCodePaths = true, directory } = options
+  const { includeClaudeCodePaths = false, directory } = options
 
   const [opencodeProjectSkills, opencodeGlobalSkills, sharedSkills] = await Promise.all([
     discoverOpencodeProjectSkills(directory),

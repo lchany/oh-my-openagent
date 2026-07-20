@@ -69,6 +69,7 @@ export interface AutoSlashCommandHookOptions {
   skills?: LoadedSkill[]
   pluginsEnabled?: boolean
   enabledPluginsOverride?: Record<string, boolean>
+  includeClaudeCodePaths?: boolean
   directory?: string
 }
 
@@ -77,6 +78,7 @@ export function createAutoSlashCommandHook(options?: AutoSlashCommandHookOptions
     skills: options?.skills,
     pluginsEnabled: options?.pluginsEnabled,
     enabledPluginsOverride: options?.enabledPluginsOverride,
+    includeClaudeCodePaths: options?.includeClaudeCodePaths,
     directory: options?.directory,
   }
   const sessionProcessedCommands = createProcessedCommandStore()

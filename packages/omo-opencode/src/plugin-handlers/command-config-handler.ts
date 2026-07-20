@@ -60,7 +60,7 @@ export async function applyCommandConfig(params: {
   const systemCommands = (params.config.command as Record<string, unknown>) ?? {};
 
   const includeClaudeCommands = params.pluginConfig.claude_code?.commands ?? true;
-  const includeClaudeSkills = params.pluginConfig.claude_code?.skills ?? true;
+  const includeClaudeSkills = params.pluginConfig.claude_code?.skills ?? false;
 
   const externalSkillPlugin = detectExternalSkillPlugin(params.ctx.directory);
   if (includeClaudeSkills && externalSkillPlugin.detected && externalSkillPlugin.pluginName) {

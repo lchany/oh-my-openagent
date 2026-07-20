@@ -57,6 +57,7 @@ export function createCoreTools(args: {
     browserProvider: skillContext.browserProvider,
     disabledSkills: skillContext.disabledSkills,
     teamModeEnabled: pluginConfig.team_mode?.enabled ?? false,
+    includeClaudeCodePaths: pluginConfig.claude_code?.skills ?? false,
     availableCategories,
     availableSkills: skillContext.availableSkills,
     nativeSkills,

@@ -106,6 +106,7 @@ export interface DelegateTaskToolOptions {
   browserProvider?: BrowserAutomationProvider
   disabledSkills?: Set<string>
   teamModeEnabled?: boolean
+  includeClaudeCodePaths?: boolean
   availableCategories?: AvailableCategory[]
   availableSkills?: AvailableSkill[]
   agentOverrides?: AgentOverrides

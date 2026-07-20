@@ -80,7 +80,7 @@ claude project body.
       process.chdir(TEST_DIR)
 
       try {
-        const skills = await discoverSkills()
+        const skills = await discoverSkills({ includeClaudeCodePaths: true })
         const duplicates = skills.filter(s => s.name === "duplicate-skill")
 
         // then
@@ -141,7 +141,7 @@ claude project body.
       process.chdir(TEST_DIR)
 
       try {
-        const skills = await discoverSkills()
+        const skills = await discoverSkills({ includeClaudeCodePaths: true })
         const matches = skills.filter(s => s.name === "global-over-project")
 
         expect(matches).toHaveLength(1)
@@ -162,7 +162,7 @@ claude project body.
       }
     })
 
-    it("prioritizes project Claude ulw-plan over shared ulw-plan", async () => {
+    it("prioritizes project Claude ulw-plan over shared ulw-plan when legacy discovery is enabled", async () => {
       const originalCwd = process.cwd()
       const originalOpenCodeConfigDir = process.env.OPENCODE_CONFIG_DIR
       const originalClaudeConfigDir = process.env.CLAUDE_CONFIG_DIR
@@ -188,7 +188,7 @@ project Claude ulw-plan body.
       process.chdir(TEST_DIR)
 
       try {
-        const skills = await discoverSkills()
+        const skills = await discoverSkills({ includeClaudeCodePaths: true })
         const matches = skills.filter(s => s.name === "ulw-plan")
 
         expect(matches).toHaveLength(1)
@@ -209,7 +209,7 @@ project Claude ulw-plan body.
       }
     })
 
-    it("prioritizes project Agents ulw-plan over shared ulw-plan", async () => {
+    it("prioritizes project Agents ulw-plan over shared ulw-plan when legacy discovery is enabled", async () => {
       const originalCwd = process.cwd()
       const originalOpenCodeConfigDir = process.env.OPENCODE_CONFIG_DIR
       const originalClaudeConfigDir = process.env.CLAUDE_CONFIG_DIR
@@ -235,7 +235,7 @@ project Agents ulw-plan body.
       process.chdir(TEST_DIR)
 
       try {
-        const skills = await discoverSkills()
+        const skills = await discoverSkills({ includeClaudeCodePaths: true })
         const matches = skills.filter(s => s.name === "ulw-plan")
 
         expect(matches).toHaveLength(1)

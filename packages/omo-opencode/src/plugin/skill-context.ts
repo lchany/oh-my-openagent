@@ -108,7 +108,7 @@ export async function createSkillContext(args: {
     systemMcpNames: getSystemMcpServerNames(),
   })
 
-  const includeClaudeSkills = pluginConfig.claude_code?.skills !== false
+  const includeClaudeSkills = pluginConfig.claude_code?.skills ?? false
   const hostSkillConfig = adaptHostSkillConfig(hostSkills ?? readOpencodeConfigSkills(directory))
   const [
     configSourceSkills,
@@ -133,8 +133,8 @@ export async function createSkillContext(args: {
     discoverOpencodeGlobalSkills(),
     includeClaudeSkills ? discoverProjectClaudeSkills(directory) : Promise.resolve([]),
     discoverOpencodeProjectSkills(directory),
-    discoverProjectAgentsSkills(directory),
-    discoverGlobalAgentsSkills(),
+    includeClaudeSkills ? discoverProjectAgentsSkills(directory) : Promise.resolve([]),
+    includeClaudeSkills ? discoverGlobalAgentsSkills() : Promise.resolve([]),
     discoverSharedSkills(),
   ])
 
