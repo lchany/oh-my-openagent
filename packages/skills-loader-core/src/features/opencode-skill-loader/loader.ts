@@ -70,20 +70,6 @@ export interface DiscoverSkillsOptions {
   directory?: string
 }
 
-export function createSharedCanonicalAliases(skills: LoadedSkill[]): LoadedSkill[] {
-  return skills.map((skill) => {
-    const name = `shared/${skill.name}`
-    return {
-      ...skill,
-      name,
-      definition: {
-        ...skill.definition,
-        name,
-      },
-    }
-  })
-}
-
 export async function discoverAllSkills(options: DiscoverSkillsOptions | string = {}): Promise<LoadedSkill[]> {
   const directory = typeof options === "string" ? options : options.directory
   const includeClaudeCodePaths = typeof options === "string"
@@ -98,7 +84,6 @@ export async function discoverAllSkills(options: DiscoverSkillsOptions | string 
         discoverGlobalAgentsSkills(),
       ])
     : Promise.resolve<[LoadedSkill[], LoadedSkill[], LoadedSkill[], LoadedSkill[]]>([[], [], [], []])
-
   const [opencodeProjectSkills, opencodeGlobalSkills, sharedSkills, projectSkills, userSkills, agentsProjectSkills, agentsGlobalSkills] =
     await Promise.all([
       discoverOpencodeProjectSkills(directory),
@@ -113,7 +98,6 @@ export async function discoverAllSkills(options: DiscoverSkillsOptions | string 
     ] as const)
 
   return deduplicateSkillsByName([
-    ...createSharedCanonicalAliases(sharedSkills),
     ...opencodeProjectSkills,
     ...opencodeGlobalSkills,
     ...projectSkills,
@@ -135,7 +119,6 @@ export async function discoverSkills(options: DiscoverSkillsOptions = {}): Promi
 
   if (!includeClaudeCodePaths) {
     return deduplicateSkillsByName([
-      ...createSharedCanonicalAliases(sharedSkills),
       ...opencodeProjectSkills,
       ...opencodeGlobalSkills,
       ...sharedSkills,
@@ -150,7 +133,6 @@ export async function discoverSkills(options: DiscoverSkillsOptions = {}): Promi
   ])
 
   return deduplicateSkillsByName([
-    ...createSharedCanonicalAliases(sharedSkills),
     ...opencodeProjectSkills,
     ...opencodeGlobalSkills,
     ...projectSkills,

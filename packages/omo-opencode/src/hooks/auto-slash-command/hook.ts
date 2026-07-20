@@ -133,6 +133,7 @@ export function createAutoSlashCommandHook(options?: AutoSlashCommandHookOptions
       const executionOptions: ExecutorOptions = {
         ...executorOptions,
         agent: input.agent,
+        sessionID: input.sessionID,
       }
 
       const result = await executeSlashCommand(parsed, executionOptions)
@@ -191,6 +192,7 @@ export function createAutoSlashCommandHook(options?: AutoSlashCommandHookOptions
       const executionOptions: ExecutorOptions = {
         ...executorOptions,
         agent: input.agent,
+        sessionID: input.sessionID,
       }
 
       const result = await executeSlashCommand(parsed, executionOptions)

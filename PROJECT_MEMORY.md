@@ -14,14 +14,19 @@ This file records project-specific facts, user corrections, invalidated assumpti
 - [2026-07-13] v4.17.1 adaptation baseline
   Value: Active branch `local/v4.17.1-adapted` is based directly on tag `v4.17.1` at `ed0241d1af225d38de55fdbcf0baa0abc9a1465a`; the local legacy-skill opt-in adaptation reapplied without Git conflicts.
   Source: Verified with `git rev-parse HEAD`, tag ancestry, targeted skill-discovery tests, and the current worktree diff.
-  Status: active, pending full build and live OpenCode QA.
+  Status: superseded by the 2026-07-20 v4.19.0 baseline below.
+
+- [2026-07-20] v4.19.0 adaptation baseline
+  Value: The local legacy-skill opt-in commit was merged with official tag `v4.19.0` at `14083b89f1cbf4680be13493a6c4afd67c957e8a` without restoring the removed `shared/<skill>` alias machinery.
+  Source: Verified by a successful v4.19.0 build and isolated `opencode agent list` startup.
+  Status: active and verified.
 
 ## User Corrections
 
 - [2026-07-20] Local upgrade workflow
   Previous wrong assumption: Upgrade a dirty local adaptation first, then reconstruct or preserve its history afterward.
   Correct value: Before each local OMO version upgrade, commit and push all existing local changes; then upgrade, build, and verify startup; finally commit and push the version upgrade separately.
-  Future rule: Keep upgrades to this two-commit workflow and run only the validation needed for the changed surface unless broader failures point to the upgrade.
+  Future rule: Keep upgrades to this two-commit workflow. By default, only build and perform a simple startup check; do not run tests unless startup fails or the user explicitly requests tests.
   Source: user correction
   Status: active
 
@@ -34,9 +39,9 @@ This file records project-specific facts, user corrections, invalidated assumpti
 
 ## Current Task State
 
-- Current goal: Complete and verify the local skill-discovery adaptation on the fixed `v4.17.1` release baseline.
-- Last verified: The adaptation reapplied without conflicts; 149 targeted tests passed across default/opt-in discovery, cache isolation, git-master precedence, skill context, command registration, delegation fallback, and auto slash-command behavior.
-- Next step: Run diagnostics, full typecheck/build, isolated OpenCode QA, then remove the temporary migration stash.
+- Current goal: Keep the local OMO plugin on the verified v4.19.0 baseline while preserving explicit legacy-skill opt-in behavior.
+- Last verified: The v4.19.0 build completed and isolated `opencode agent list` registered the expected OMO primary and subagents.
+- Next step: Commit and push the v4.19.0 upgrade branch.
 - Blockers: None.
 - [2026-07-10] Local OpenCode missing agent diagnosis
   Resolved: `origin/dev` adds the GPT-5.6 Hephaestus prompt and allow-list. The configured `openai/gpt-5.6-terra` now registers Hephaestus successfully after rebuild and service restart.
@@ -59,6 +64,7 @@ This file records project-specific facts, user corrections, invalidated assumpti
 - Relevant files: `packages/skills-loader-core/src/features/opencode-skill-loader/`; `packages/omo-opencode/src/plugin/` and related command/delegation integration files.
 - Relevant commands: `git fetch --tags origin`; `git stash apply`; `bun install --frozen-lockfile`; `bun run typecheck`; `bun test`; `bun run build`.
 - Saved outputs or logs: `.omo/evidence/20260710-gpt56-hephaestus-dev-adaptation/verification.md`.
+- Upgrade evidence: `.omo/evidence/20260720-v419-local-upgrade/verification.md`.
 
 ## Archive Candidates
 
