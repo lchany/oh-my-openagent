@@ -23,6 +23,13 @@ This file records project-specific facts, user corrections, invalidated assumpti
 
 ## User Corrections
 
+- [2026-07-20] Model selection objective
+  Previous wrong assumption: Infer a quality-first model choice by independently replacing official Mini, Luna, or K2.6 recommendations with larger models.
+  Correct value: The local OMO model configuration should use the best role-compatible choice explicitly recommended by official v4.19.0 routing and model-matching guidance within the user's available providers; cost is not the goal, but unofficial substitutions are not allowed.
+  Future rule: Follow official role matching, tuned prompt support, and official fallback order. Do not substitute a model merely because it appears larger or newer unless official guidance explicitly recommends that override.
+  Source: user correction
+  Status: active
+
 - [2026-07-20] Local upgrade workflow
   Previous wrong assumption: Upgrade a dirty local adaptation first, then reconstruct or preserve its history afterward.
   Correct value: Before each local OMO version upgrade, commit and push all existing local changes; then upgrade, build, and verify startup; finally commit and push the version upgrade separately.
