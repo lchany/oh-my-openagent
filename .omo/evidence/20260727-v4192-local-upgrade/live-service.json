@@ -1,0 +1,26 @@
+{
+  "service": {
+    "state": "active",
+    "pid": "3858939",
+    "health": {
+      "healthy": true,
+      "version": "1.18.4"
+    }
+  },
+  "agents": {
+    "sisyphus": true,
+    "hephaestus": true,
+    "prometheus": true,
+    "sisyphus_junior": true
+  },
+  "frpc": {
+    "codex_mobile": "active",
+    "opencode_web": "active",
+    "opencode": "activating"
+  },
+  "initial_probe": {
+    "window_seconds": 60,
+    "result": "timed_out_before_http_ready"
+  },
+  "final_probe": "passed"
+}

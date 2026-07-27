@@ -15,12 +15,17 @@
 - The isolated OpenCode process registered Sisyphus, Hephaestus, Prometheus, and Sisyphus-Junior from the local build.
 - The real OpenCode session count was unchanged.
 - The local `gbrain-capture` and `gbrain-review` shared skill sources remained present after the merge.
+- The live `opencode.service` restart changed the server PID, returned to `active`, and subsequently returned a healthy response from `/global/health`.
+- The live `/agent` endpoint registered Sisyphus, Hephaestus, Prometheus, and Sisyphus-Junior after the restart.
+- The restart helper's initial 60-second HTTP probe timed out exactly at the end of its window; a subsequent direct probe passed. This was a readiness-window limitation, not a failed service restart.
+- No FRP unit was restarted or reconfigured. The two previously active FRP units remained active; `frpc-opencode.service` remained in its pre-existing `activating` state.
 
 ## Why this is enough
 
 - The build exercises every published adapter artifact and regenerates the tracked Codex/Senpi outputs.
 - The targeted suites directly pin the only runtime behavior unique to the local adaptation: legacy Claude Code and `.agents` skill paths remain disabled unless `claude_code.skills` explicitly enables them.
 - The real CLI smoke proves the upgraded plugin loads through OpenCode without invoking a model provider, while the session-count comparison proves isolation.
+- The post-restart health and agent endpoints prove the actual local service loaded and exposed the upgraded plugin surface.
 
 ## What was omitted
 
@@ -35,3 +40,4 @@
 - `agent-list.txt`
 - `agent-list.stderr`
 - `isolation.json`
+- `live-service.json`
