@@ -7,7 +7,8 @@ import { tmpdir } from "node:os"
 import { join } from "node:path"
 import { updateCodexConfig } from "./codex-config-toml"
 
-const posixTest = process.platform === "win32" ? test.skip : test
+const canSimulateUnreadableFile = process.platform !== "win32" && !(typeof process.getuid === "function" && process.getuid() === 0)
+const posixTest = canSimulateUnreadableFile ? test : test.skip
 
 posixTest("#given unreadable existing config #when updating config #then rejects and preserves content", async () => {
   // given
