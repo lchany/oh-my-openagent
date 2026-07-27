@@ -23,6 +23,13 @@ This file records project-specific facts, user corrections, invalidated assumpti
 
 ## User Corrections
 
+- [2026-07-27] OMO upgrade scope
+  Previous wrong assumption: Apply the general GBrain recall/capture workflow while upgrading the local OMO plugin.
+  Correct value: A local OMO plugin upgrade on this machine is an OMO repository, fork, build, QA, and OpenCode service task; it does not involve querying or operating GBrain unless the user explicitly asks for GBrain work.
+  Future rule: Keep OMO upgrades scoped to the local OMO repository and OpenCode surfaces. Do not add GBrain operations merely because unrelated GBrain changes are present in the OMO worktree.
+  Source: user correction
+  Status: active
+
 - [2026-07-20] Model selection objective
   Previous wrong assumption: Infer a quality-first model choice by independently replacing official Mini, Luna, or K2.6 recommendations with larger models.
   Correct value: The local OMO model configuration should use the best role-compatible choice explicitly recommended by official v4.19.0 routing and model-matching guidance within the user's available providers; cost is not the goal, but unofficial substitutions are not allowed.
@@ -46,6 +53,20 @@ This file records project-specific facts, user corrections, invalidated assumpti
 
 ## Current Task State
 
+- [2026-07-27] GBrain no-hook capture plan: COMPLETE 17/17
+  State: plan `gbrain-no-hook-capture-implementation` fully complete. Todos 1-12 and Final Wave F1-F5 all verified/APPROVE.
+  Resolution: production `/opt/gbrain` was deployed with the plan's files and `gbrain-serve-http.service` restarted (service-only); F5 final reviewer confirmed live default inbox exclusion and read-token write denial. VERDICT: APPROVE.
+  Archive: complete project archived to `github.com/lchany/GBrain-self-evolution` (main = de031d3): gbrain + omo patches, docs, skills, rules, README, EVIDENCE.
+  Source repos: all changes remain uncommitted working-tree state per the no-commit rule; the archive repo is the distribution vehicle.
+  Evidence: `.omo/evidence/20260726-gbrain-no-hook-capture/` (todo-12 INDEX, final-wave reports, deploy/).
+  Status: complete.
+- [2026-07-27] GBrain deployment package plan: COMPLETE 12/12
+  State: plan `gbrain-self-evolution-deployment-package` fully complete. Todos 1-7 and Final Wave F1-F5 all APPROVE (F1/F4 required one fix+re-review round each).
+  Delivered: `docs/deployment/` (README entry, new-machine-bootstrap, client-onboarding, agent-rules, verification-checklist), `deploy/` (6 systemd + 5 env templates + 3 dry-run scripts), README/EVIDENCE final-state repair, broken cross-doc links fixed repo-wide (109 links, 0 broken), `__VG_` redaction tokens removed from published content.
+  Published: commit `cf225946a2b66d4aaaaec9e80a925651ac550019` (`docs: add GBrain deployment package guide`) pushed to `github.com/lchany/GBrain-self-evolution` main; remote verified (SHA match, 19 new files, clean tree).
+  Notes: commit author email is the machine git config `__VG_EMAIL_` placeholder, consistent across all repo history (privacy-safe, not a leak). Source repos (gbrain, oh-my-openagent) untouched by this plan; their dirty state is the pre-existing patch source.
+  Evidence: `.omo/evidence/20260727-gbrain-self-evolution-deployment-package/` (final-local-qa, final-f1..f5, publication-proof).
+  Status: complete.
 - Current goal: Keep the local OMO plugin on the verified v4.19.0 baseline while preserving explicit legacy-skill opt-in behavior.
 - Last verified: The v4.19.0 build completed and isolated `opencode agent list` registered the expected OMO primary and subagents.
 - Next step: Commit and push the v4.19.0 upgrade branch.
