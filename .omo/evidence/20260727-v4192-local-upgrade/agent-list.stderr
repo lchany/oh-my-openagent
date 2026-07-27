@@ -1,0 +1,15 @@
+timestamp=2026-07-27T07:24:04.781Z level=INFO run=cfdd69b9 message="creating instance" directory=/home/l30002999/source_code/oh-my-openagent
+timestamp=2026-07-27T07:24:04.783Z level=INFO run=cfdd69b9 message=fromDirectory directory=/home/l30002999/source_code/oh-my-openagent
+timestamp=2026-07-27T07:24:04.821Z level=INFO run=cfdd69b9 message=bootstrapping directory=/home/l30002999/source_code/oh-my-openagent
+timestamp=2026-07-27T07:24:04.832Z level=INFO run=cfdd69b9 message=loading path=/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/config/opencode/config.json
+timestamp=2026-07-27T07:24:04.833Z level=INFO run=cfdd69b9 message=loading path=/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/config/opencode/opencode.json
+timestamp=2026-07-27T07:24:04.837Z level=INFO run=cfdd69b9 message=loading path=/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/config/opencode/opencode.jsonc
+timestamp=2026-07-27T07:24:04.850Z level=INFO run=cfdd69b9 message=loading path=/home/l30002999/source_code/oh-my-openagent/.opencode/opencode.json
+timestamp=2026-07-27T07:24:04.855Z level=INFO run=cfdd69b9 message=loading path=/home/l30002999/source_code/oh-my-openagent/.opencode/opencode.jsonc
+timestamp=2026-07-27T07:24:05.018Z level=INFO run=cfdd69b9 message=loading path=/etc/opencode/opencode.json
+timestamp=2026-07-27T07:24:05.018Z level=INFO run=cfdd69b9 message=loading path=/etc/opencode/opencode.jsonc
+timestamp=2026-07-27T07:24:14.358Z level=INFO run=cfdd69b9 message="all LSPs are disabled"
+timestamp=2026-07-27T07:24:14.360Z level=INFO run=cfdd69b9 message="all formatters are disabled"
+timestamp=2026-07-27T07:24:14.360Z level=INFO run=cfdd69b9 message=init
+timestamp=2026-07-27T07:24:14.403Z level=INFO run=cfdd69b9 message="fetching index" url=http://127.0.0.1:41725/index.json
+timestamp=2026-07-27T07:24:14.466Z level=INFO run=cfdd69b9 message="disposing instance" directory=/home/l30002999/source_code/oh-my-openagent

@@ -1,0 +1,4283 @@
+Sisyphus - ultraworker (primary)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "question",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "call_omo_agent",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "grep",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "glob",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task_*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "teammate",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+Hephaestus - Deep Agent (primary)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "question",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "call_omo_agent",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "grep",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "glob",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "teammate",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+Prometheus - Plan Builder (primary)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "edit",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "bash",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "question",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "call_omo_agent",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task_*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "teammate",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "interactive_bash",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+build (subagent)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+compaction (primary)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "*",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+explore (subagent)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "*",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "grep",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "glob",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "list",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "bash",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "websearch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "write",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "edit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "apply_patch",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "call_omo_agent",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "lsp_symbols",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "lsp_goto_definition",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "lsp_find_references",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "lsp_diagnostics",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+general (subagent)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "todowrite",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+plan (subagent)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "pattern": "general",
+    "action": "deny"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/plans/*",
+    "action": "allow"
+  },
+  {
+    "permission": "edit",
+    "pattern": "*",
+    "action": "deny"
+  },
+  {
+    "permission": "edit",
+    "pattern": ".opencode/plans/*.md",
+    "action": "allow"
+  },
+  {
+    "permission": "edit",
+    "pattern": "../../tmp/omo-v4192-upgrade/opencode-qa/data/opencode/plans/*.md",
+    "action": "allow"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+summary (primary)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "*",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+title (primary)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "*",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+librarian (subagent)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "write",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "edit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "apply_patch",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "call_omo_agent",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "grep_app_*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+Metis - Plan Consultant (subagent)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "write",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "edit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "apply_patch",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+Momus - Plan Critic (subagent)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "write",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "edit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "apply_patch",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+multimodal-looker (subagent)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "*",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "look_at",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+oracle (subagent)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "write",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "edit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "apply_patch",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
+Sisyphus-Junior (subagent)
+  [
+  {
+    "permission": "*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "doom_loop",
+    "action": "ask",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "*",
+    "action": "ask"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/tmp/opencode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.claude/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/codex-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/omomomo/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/tech-debt-audit/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/opencode-qa/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/get-unpublished-changes/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/publish/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.agents/skills/remove-deadcode/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/github-triage/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/work-with-pr/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/hyperplan/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/source_code/oh-my-openagent/.opencode/skills/pre-publish-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-research/*",
+    "action": "allow"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/cache/opencode/skills/security-review/*",
+    "action": "allow"
+  },
+  {
+    "permission": "question",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_enter",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "plan_exit",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "read",
+    "pattern": "*",
+    "action": "allow"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.*",
+    "action": "ask"
+  },
+  {
+    "permission": "read",
+    "pattern": "*.env.example",
+    "action": "allow"
+  },
+  {
+    "permission": "webfetch",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "task",
+    "action": "deny",
+    "pattern": "*"
+  },
+  {
+    "permission": "call_omo_agent",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "task_*",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "teammate",
+    "action": "allow",
+    "pattern": "*"
+  },
+  {
+    "permission": "external_directory",
+    "pattern": "/home/l30002999/tmp/omo-v4192-upgrade/opencode-qa/data/opencode/tool-output/*",
+    "action": "allow"
+  }
+]
