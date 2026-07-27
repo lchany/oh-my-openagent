@@ -19,6 +19,12 @@ This file records project-specific facts, user corrections, invalidated assumpti
 - [2026-07-20] v4.19.0 adaptation baseline
   Value: The local legacy-skill opt-in commit was merged with official tag `v4.19.0` at `14083b89f1cbf4680be13493a6c4afd67c957e8a` without restoring the removed `shared/<skill>` alias machinery.
   Source: Verified by a successful v4.19.0 build and isolated `opencode agent list` startup.
+  Status: superseded by the 2026-07-27 v4.19.2 baseline below.
+
+- [2026-07-27] v4.19.2 adaptation baseline
+  Value: Branch `local/v4.19.2-adapted` merges official tag `v4.19.2` at `3f917a94c4bc425de94ec8cc6223cda95328021c` with the committed local legacy-skill opt-in adaptation and local shared-skill additions.
+  Source: Merge commit `e399086e4ca6df266a60101d25e990bb1d9acd46`; successful build; 11 targeted legacy-skill tests; isolated `opencode agent list`; live service health and agent endpoint checks.
+  Evidence: `.omo/evidence/20260727-v4192-local-upgrade/verification.md`.
   Status: active and verified.
 
 ## User Corrections
@@ -67,9 +73,9 @@ This file records project-specific facts, user corrections, invalidated assumpti
   Notes: commit author email is the machine git config `__VG_EMAIL_` placeholder, consistent across all repo history (privacy-safe, not a leak). Source repos (gbrain, oh-my-openagent) untouched by this plan; their dirty state is the pre-existing patch source.
   Evidence: `.omo/evidence/20260727-gbrain-self-evolution-deployment-package/` (final-local-qa, final-f1..f5, publication-proof).
   Status: complete.
-- Current goal: Keep the local OMO plugin on the verified v4.19.0 baseline while preserving explicit legacy-skill opt-in behavior.
-- Last verified: The v4.19.0 build completed and isolated `opencode agent list` registered the expected OMO primary and subagents.
-- Next step: Commit and push the v4.19.0 upgrade branch.
+- Current goal: Keep the local OMO plugin on the verified v4.19.2 baseline while preserving explicit legacy-skill opt-in behavior and the committed local shared skills.
+- Last verified: The v4.19.2 build completed; 11 targeted adaptation tests passed; isolated and live OpenCode surfaces registered the expected primary and subagents; `opencode.service` is healthy after restart.
+- Next step: Use `local/v4.19.2-adapted` as the active upgrade branch for future work.
 - Blockers: None.
 - [2026-07-10] Local OpenCode missing agent diagnosis
   Resolved: `origin/dev` adds the GPT-5.6 Hephaestus prompt and allow-list. The configured `openai/gpt-5.6-terra` now registers Hephaestus successfully after rebuild and service restart.
