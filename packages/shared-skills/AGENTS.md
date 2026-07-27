@@ -6,9 +6,9 @@
 
 Hand-authored, cross-harness skill bundle shared between the OpenCode and Codex editions. Mostly authored skill data, with skill-owned scripts/assets when required and no transform inside the package. `index.mjs` exports `sharedSkillsRootPath()` returning the absolute path to `skills/`. Package: `@oh-my-opencode/shared-skills` (`files`: `index.mjs`, `index.d.ts`, `skills`).
 
-## SKILLS (16 under `skills/<name>/`)
+## SKILLS (18 under `skills/<name>/`)
 
-`programming`, `debugging`, `frontend`, `visual-qa`, `ast-grep`, `coding-agent-sessions`, `git-master`, `refactor`, `review-work`, `start-work`, `ulw-plan`, `ulw-research`, `init-deep`, `remove-ai-slops`, `lsp-setup`, `ultimate-browsing`.
+`programming`, `debugging`, `frontend`, `visual-qa`, `ast-grep`, `coding-agent-sessions`, `git-master`, `refactor`, `review-work`, `start-work`, `ulw-plan`, `ulw-research`, `init-deep`, `remove-ai-slops`, `lsp-setup`, `ultimate-browsing`, `gbrain-capture`, `gbrain-review`.
 
 The Codex-only `lcx-report-bug`, `lcx-contribute-bug-fix`, and `lcx-doctor` skills live under `packages/omo-codex/plugin/components/lcx/skills/`; they are no longer authored in this package.
 
