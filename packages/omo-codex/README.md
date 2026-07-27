@@ -37,6 +37,8 @@ To install **both** the Ultimate edition (OpenCode plugin) and the Light edition
 
 The installer copies the built plugin into `~/.codex/plugins/cache/sisyphuslabs/omo/<version>/`, writes the local marketplace snapshot under `~/.codex/.tmp/marketplaces/sisyphuslabs/plugins/omo/`, copies bundled agent TOMLs into `~/.codex/agents/`, enables `omo@sisyphuslabs` in `~/.codex/config.toml`, writes the valid `[features.multi_agent_v2]` limit table without enabling MultiAgentV2, and registers the `sisyphuslabs` marketplace from the local built cache. If an older config used `[features] multi_agent_v2 = false`, the installer preserves that explicit disable as table-form `enabled = false`. `lazycodex-ai` is the npm/bin alias and `lazycodex` is the marketplace repository; the marketplace identity remains `sisyphuslabs`.
 
+For GBrain client setup, run `gbrain install-client` against the target user environment after LazyCodex is installed. It installs the user-level Codex GBrain rule block and the `gbrain-capture` / `gbrain-review` skills; those skills invoke the shell CLIs `gbrain capture` and `gbrain review`, and promotion still requires the exact human confirmation phrase `PROMOTE <target-slug>`. This path does not add Codex lifecycle hooks.
+
 To remove managed Codex Light state, run `npx lazycodex-ai uninstall`. The backward-compatible alias is `npx lazycodex-ai cleanup`. Uninstall removes managed `sisyphuslabs` cache/marketplace directories, strips OMO marketplace/plugin/hook-state config blocks with a backup, removes managed agent TOML files from `~/.codex/agents/`, and repairs the known project-local legacy `.codex/config.toml` conflict while leaving project-owned `.codex` files in place.
 
 ### Local dev install (dogfood the source build)
