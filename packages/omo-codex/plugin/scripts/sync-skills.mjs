@@ -183,6 +183,35 @@ private logs, or PII; summarize with lengths, hashes, and short non-sensitive
 prefixes when identity is needed.
 `;
 
+const gbrainCaptureCodexCompatibility = `## Codex GBrain Compatibility
+
+In Codex, invoke the GBrain capture CLI through the shell as \`gbrain capture\` or \`gbrain capture retry\`. Do not rewrite it to \`gbrain-capture ...\` unless that standalone binary is explicitly present in the active environment.
+
+When direct MCP access is required, use the active Codex MCP tool surface only for a configured GBrain server/tool that is visible in the current tools list; otherwise prefer the \`gbrain capture\` CLI. Keep GBrain service identifiers as placeholders such as \`<server>\` and never write real URLs, IPs, tokens, or secrets into Codex rules, skills, notes, or drafts.
+
+`;
+
+const gbrainReviewCodexCompatibility = `## Codex GBrain Compatibility
+
+In Codex, invoke the GBrain review CLI through the shell as \`gbrain review\`. Do not rewrite it to \`gbrain-review ...\` unless that standalone binary is explicitly present in the active environment.
+
+Promotion remains a human gate: \`gbrain review promote ... --confirm "PROMOTE <target-slug>"\` requires the user to provide the exact \`PROMOTE <target-slug>\` phrase. Agents must not invent or auto-submit that confirmation.
+
+When direct MCP access is required, use the active Codex MCP tool surface only for a configured GBrain server/tool that is visible in the current tools list; otherwise prefer the \`gbrain review\` CLI. Keep GBrain service identifiers as placeholders such as \`<server>\` and never write real URLs, IPs, tokens, or secrets into Codex rules, skills, notes, or drafts.
+
+`;
+
+function insertAfterFrontmatter(content, section) {
+	if (content.includes(section.trim())) return content;
+	const frontmatterMatch = content.match(/^---\n[\s\S]*?\n---\n+/);
+	if (!frontmatterMatch) return `${section}${content}`;
+	return `${frontmatterMatch[0]}${section}${content.slice(frontmatterMatch[0].length)}`;
+}
+
+function removeGbrainReviewStandaloneBinarySection(content) {
+	return content.replace(/\n独立 bin 也可用：\n\n```bash\ngbrain-review <list\|show\|plan\|reject\|needs-evidence\|keep\|promote\|merge\|verify\|repair\|cleanup>\n```\n/, "\n");
+}
+
 function applyCodexSkillOverlays(skillName, content) {
 	if (skillName === "start-work") {
 		return content
@@ -191,6 +220,12 @@ function applyCodexSkillOverlays(skillName, content) {
 	}
 	if (skillName === "review-work" && !content.includes("When `review-work` is used as a final implementation")) {
 		return content.replace(reviewWorkAnchor, `${reviewWorkAnchor}${reviewWorkCodexGate}`);
+	}
+	if (skillName === "gbrain-capture") {
+		return insertAfterFrontmatter(content, gbrainCaptureCodexCompatibility);
+	}
+	if (skillName === "gbrain-review") {
+		return removeGbrainReviewStandaloneBinarySection(insertAfterFrontmatter(content, gbrainReviewCodexCompatibility));
 	}
 	return content;
 }
